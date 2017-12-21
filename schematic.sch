@@ -1,0 +1,701 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:larpix_power_components
+LIBS:schematic-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LArPix power board"
+Date ""
+Rev "1"
+Comp "Lawrence Berkeley National Lab"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_02x06_Odd_Even J2
+U 1 1 5A24F8A0
+P 6300 1000
+F 0 "J2" H 6350 1300 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 6350 600 50  0000 C CNN
+F 2 "" H 6300 1000 50  0001 C CNN
+F 3 "" H 6300 1000 50  0001 C CNN
+	1    6300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x06_Odd_Even J9
+U 1 1 5A250483
+P 9400 1850
+F 0 "J9" H 9450 2150 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9450 1450 50  0000 C CNN
+F 2 "" H 9400 1850 50  0001 C CNN
+F 3 "" H 9400 1850 50  0001 C CNN
+	1    9400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x06_Odd_Even J6
+U 1 1 5A2504D0
+P 7850 1850
+F 0 "J6" H 7900 2150 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 7900 1450 50  0000 C CNN
+F 2 "" H 7850 1850 50  0001 C CNN
+F 3 "" H 7850 1850 50  0001 C CNN
+	1    7850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x06_Odd_Even J3
+U 1 1 5A2504F9
+P 6300 1850
+F 0 "J3" H 6350 2150 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 6350 1450 50  0000 C CNN
+F 2 "" H 6300 1850 50  0001 C CNN
+F 3 "" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	1    0    0    -1  
+$EndComp
+Text Label 9700 1650 0    60   ~ 0
+MISO_B
+Text Label 9700 1750 0    60   ~ 0
+MOSI_B
+Text Label 9700 1850 0    60   ~ 0
+MISO_A
+Text Label 9700 1950 0    60   ~ 0
+MOSI_A
+Text Label 9700 2050 0    60   ~ 0
+GND
+Text Label 9700 2150 0    60   ~ 0
+GND
+Text Label 8150 1650 0    60   ~ 0
+MISO_B
+Text Label 8150 1750 0    60   ~ 0
+MOSI_B
+Text Label 8150 1850 0    60   ~ 0
+MISO_A
+Text Label 8150 1950 0    60   ~ 0
+MOSI_A
+Text Label 8150 2050 0    60   ~ 0
+GND
+Text Label 8150 2150 0    60   ~ 0
+GND
+Text Label 9200 1650 2    60   ~ 0
+GND
+Text Label 9200 1750 2    60   ~ 0
+GND
+Text Label 9200 1850 2    60   ~ 0
+GND
+Text Label 9200 1950 2    60   ~ 0
+GND
+Text Label 9200 2050 2    60   ~ 0
+GND
+Text Label 9200 2150 2    60   ~ 0
+GND
+Text Label 7650 1650 2    60   ~ 0
+GND
+Text Label 7650 1750 2    60   ~ 0
+GND
+Text Label 7650 1850 2    60   ~ 0
+GND
+Text Label 7650 1950 2    60   ~ 0
+GND
+Text Label 7650 2050 2    60   ~ 0
+GND
+Text Label 7650 2150 2    60   ~ 0
+GND
+Text Label 6600 1650 0    60   ~ 0
+MISO_B
+Text Label 6600 1750 0    60   ~ 0
+MOSI_B
+Text Label 6600 1850 0    60   ~ 0
+MISO_A
+Text Label 6600 1950 0    60   ~ 0
+MOSI_A
+Text Label 6600 2050 0    60   ~ 0
+GND
+Text Label 6600 2150 0    60   ~ 0
+GND
+Text Label 6100 2050 2    60   ~ 0
+GND
+Text Label 6100 2150 2    60   ~ 0
+GND
+Text Label 6100 800  2    60   ~ 0
+BOARD_VDDD
+Text Label 6100 900  2    60   ~ 0
+TRANS_RST_N_IN
+Text Label 6100 1000 2    60   ~ 0
+BOARD_EXTERN_TRIG_IN
+Text Label 6100 1100 2    60   ~ 0
+TRANS_CLK_2X_IN
+Text Label 6100 1200 2    60   ~ 0
+BOARD_VDDPST
+Text Label 6100 1300 2    60   ~ 0
+GND
+$Comp
+L GND #PWR01
+U 1 1 5A250E9C
+P 1250 1150
+F 0 "#PWR01" H 1250 900 50  0001 C CNN
+F 1 "GND" H 1250 1000 50  0000 C CNN
+F 2 "" H 1250 1150 50  0001 C CNN
+F 3 "" H 1250 1150 50  0001 C CNN
+	1    1250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5A250F31
+P 1250 1150
+F 0 "#FLG02" H 1250 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1300 50  0000 C CNN
+F 2 "" H 1250 1150 50  0001 C CNN
+F 3 "" H 1250 1150 50  0001 C CNN
+	1    1250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT1
+U 1 1 5A25119A
+P 1800 1000
+F 0 "BT1" H 1900 1100 50  0000 L CNN
+F 1 "1.5V" H 1900 1000 50  0000 L CNN
+F 2 "" V 1800 1060 50  0001 C CNN
+F 3 "" V 1800 1060 50  0001 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT2
+U 1 1 5A2512F3
+P 1800 1850
+F 0 "BT2" H 1900 1950 50  0000 L CNN
+F 1 "1.5V" H 1900 1850 50  0000 L CNN
+F 2 "" V 1800 1910 50  0001 C CNN
+F 3 "" V 1800 1910 50  0001 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1100 1800 1650
+$Comp
+L GND #PWR03
+U 1 1 5A2513A4
+P 1800 1950
+F 0 "#PWR03" H 1800 1700 50  0001 C CNN
+F 1 "GND" H 1800 1800 50  0000 C CNN
+F 2 "" H 1800 1950 50  0001 C CNN
+F 3 "" H 1800 1950 50  0001 C CNN
+	1    1800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 800  3950 800 
+Text Label 3950 800  0    60   ~ 0
+BOARD_VDDPST
+Text Label 3950 900  0    60   ~ 0
+BOARD_VDDD
+$Comp
+L CMOD_A7_FPGA U3
+U 1 1 5A251D76
+P 1600 4150
+F 0 "U3" H 1550 3650 60  0000 C TNN
+F 1 "CMOD_A7_FPGA" H 1600 4350 60  0000 C CNN
+F 2 "" H 1550 3650 60  0001 C CNN
+F 3 "" H 1550 3650 60  0001 C CNN
+	1    1600 4150
+	-1   0    0    1   
+$EndComp
+Text Label 2250 4250 0    60   ~ 0
+FPGA_CLK_2X_IN
+Text Label 2250 4150 0    60   ~ 0
+FPGA_MOSI_A
+Text Label 2250 4050 0    60   ~ 0
+FPGA_MISO_A
+$Comp
+L GND #PWR04
+U 1 1 5A251E66
+P 800 3700
+F 0 "#PWR04" H 800 3450 50  0001 C CNN
+F 1 "GND" H 800 3550 50  0000 C CNN
+F 2 "" H 800 3700 50  0001 C CNN
+F 3 "" H 800 3700 50  0001 C CNN
+	1    800  3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 3750 800  3750
+Wire Wire Line
+	800  3750 800  3700
+$Comp
+L TXB0104D U1
+U 1 1 5A25C759
+P 5100 4250
+F 0 "U1" H 4825 4905 50  0000 C CNN
+F 1 "TXB0104D" H 5450 4900 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5150 3400 50  0001 C CNN
+F 3 "" H 5210 4345 50  0001 C CNN
+	1    5100 4250
+	-1   0    0    1   
+$EndComp
+Text Label 2250 3750 0    60   ~ 0
+FPGA_VCCB
+Text Label 5000 4950 3    60   ~ 0
+FPGA_VCCB
+Text Label 5200 4950 3    60   ~ 0
+BOARD_VDDPST
+Text Label 6100 1650 2    60   ~ 0
+TRANS_MISO_B
+Text Label 6100 1950 2    60   ~ 0
+TRANS_MOSI_A
+NoConn ~ 6100 1750
+Text Label 5500 4150 0    60   ~ 0
+TRANS_MISO_A
+Text Label 5500 4350 0    60   ~ 0
+TRANS_MOSI_A
+Text Label 4700 4150 2    60   ~ 0
+FPGA_MISO_A
+Text Label 4700 4350 2    60   ~ 0
+FPGA_MOSI_A
+Text Label 4700 4550 2    60   ~ 0
+FPGA_CLK_2X_IN
+Text Label 5500 4550 0    60   ~ 0
+TRANS_CLK_2X_IN
+Text Label 4700 3950 2    60   ~ 0
+FPGA_RST_N_IN
+Text Label 5500 3950 0    60   ~ 0
+TRANS_RST_N_IN
+$Comp
+L GND #PWR05
+U 1 1 5A25F05F
+P 5100 3550
+F 0 "#PWR05" H 5100 3300 50  0001 C CNN
+F 1 "GND" H 5100 3400 50  0000 C CNN
+F 2 "" H 5100 3550 50  0001 C CNN
+F 3 "" H 5100 3550 50  0001 C CNN
+	1    5100 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A25FA4C
+P 3650 1150
+F 0 "R2" V 3730 1150 50  0000 C CNN
+F 1 "4.7R" V 3650 1150 50  0000 C CNN
+F 2 "" V 3580 1150 50  0001 C CNN
+F 3 "" H 3650 1150 50  0001 C CNN
+	1    3650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A25FAD3
+P 3300 1000
+F 0 "R1" V 3380 1000 50  0000 C CNN
+F 1 "33R" V 3300 1000 50  0000 C CNN
+F 2 "" V 3230 1000 50  0001 C CNN
+F 3 "" H 3300 1000 50  0001 C CNN
+	1    3300 1000
+	0    1    1    0   
+$EndComp
+Connection ~ 1800 1150
+Wire Wire Line
+	3450 1000 3950 1000
+Connection ~ 3650 1000
+$Comp
+L GND #PWR06
+U 1 1 5A25FCA1
+P 3650 1300
+F 0 "#PWR06" H 3650 1050 50  0001 C CNN
+F 1 "GND" H 3650 1150 50  0000 C CNN
+F 2 "" H 3650 1300 50  0001 C CNN
+F 3 "" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+Text Label 3950 1000 0    60   ~ 0
+BOARD_VCM
+$Comp
+L SW_SPDT SW1
+U 1 1 5A25FCE6
+P 2750 1100
+F 0 "SW1" H 2750 1270 50  0000 C CNN
+F 1 "SW_SPDT" H 2750 900 50  0000 C CNN
+F 2 "" H 2750 1100 50  0001 C CNN
+F 3 "" H 2750 1100 50  0001 C CNN
+	1    2750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1100 2550 1100
+Wire Wire Line
+	2950 1000 3150 1000
+NoConn ~ 2950 1200
+$Comp
+L Conn_02x06_Odd_Even J10
+U 1 1 5A260271
+P 9400 2700
+F 0 "J10" H 9450 3000 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9450 2300 50  0000 C CNN
+F 2 "" H 9400 2700 50  0001 C CNN
+F 3 "" H 9400 2700 50  0001 C CNN
+	1    9400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x06_Odd_Even J7
+U 1 1 5A260277
+P 7850 2700
+F 0 "J7" H 7900 3000 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 7900 2300 50  0000 C CNN
+F 2 "" H 7850 2700 50  0001 C CNN
+F 3 "" H 7850 2700 50  0001 C CNN
+	1    7850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x06_Odd_Even J4
+U 1 1 5A26027D
+P 6300 2700
+F 0 "J4" H 6350 3000 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 6350 2300 50  0000 C CNN
+F 2 "" H 6300 2700 50  0001 C CNN
+F 3 "" H 6300 2700 50  0001 C CNN
+	1    6300 2700
+	1    0    0    -1  
+$EndComp
+Text Label 9700 2500 0    60   ~ 0
+MONITOR_OUT_IN
+Text Label 9700 2600 0    60   ~ 0
+ADC_TEST_IN
+Text Label 9700 2700 0    60   ~ 0
+VCM
+Text Label 9700 2800 0    60   ~ 0
+VREF
+Text Label 9700 2900 0    60   ~ 0
+VDDA
+Text Label 9700 3000 0    60   ~ 0
+GND
+Text Label 8150 2500 0    60   ~ 0
+MONITOR_OUT_IN
+Text Label 8150 2600 0    60   ~ 0
+ADC_TEST_IN
+Text Label 8150 2700 0    60   ~ 0
+VCM
+Text Label 8150 2800 0    60   ~ 0
+VREF
+Text Label 8150 2900 0    60   ~ 0
+VDDA
+Text Label 8150 3000 0    60   ~ 0
+GND
+Text Label 9200 2500 2    60   ~ 0
+GND
+Text Label 9200 2600 2    60   ~ 0
+GND
+Text Label 9200 2700 2    60   ~ 0
+GND
+Text Label 9200 2800 2    60   ~ 0
+GND
+Text Label 9200 2900 2    60   ~ 0
+GND
+Text Label 9200 3000 2    60   ~ 0
+GND
+Text Label 7650 2500 2    60   ~ 0
+GND
+Text Label 7650 2600 2    60   ~ 0
+GND
+Text Label 7650 2700 2    60   ~ 0
+GND
+Text Label 7650 2800 2    60   ~ 0
+GND
+Text Label 7650 2900 2    60   ~ 0
+GND
+Text Label 7650 3000 2    60   ~ 0
+GND
+Text Label 6600 2500 0    60   ~ 0
+MONITOR_OUT_IN
+Text Label 6600 2600 0    60   ~ 0
+ADC_TEST_IN
+Text Label 6600 2700 0    60   ~ 0
+VCM
+Text Label 6600 2800 0    60   ~ 0
+VREF
+Text Label 6600 2900 0    60   ~ 0
+VDDA
+Text Label 6600 3000 0    60   ~ 0
+GND
+Text Label 6100 2900 2    60   ~ 0
+BOARD_VDDA
+Text Label 6100 3000 2    60   ~ 0
+GND
+Text Label 6100 2500 2    60   ~ 0
+BOARD_MONITOR_OUT_IN
+Text Label 6100 2600 2    60   ~ 0
+BOARD_ADC_TEST_IN
+Text Label 6100 2700 2    60   ~ 0
+BOARD_VCM
+Text Label 6100 2800 2    60   ~ 0
+BOARD_VREF
+Wire Wire Line
+	1800 1100 2150 1100
+Wire Wire Line
+	2150 1100 2150 900 
+Wire Wire Line
+	2150 900  3950 900 
+Wire Wire Line
+	1800 1150 2200 1150
+Wire Wire Line
+	2200 1150 2200 1100
+Wire Wire Line
+	1800 1500 3950 1500
+Connection ~ 1800 1500
+Wire Wire Line
+	1800 1600 3950 1600
+Connection ~ 1800 1600
+Text Label 3950 1500 0    60   ~ 0
+BOARD_VREF
+Text Label 3950 1600 0    60   ~ 0
+BOARD_VDDA
+NoConn ~ 6100 2500
+NoConn ~ 6100 2600
+$Comp
+L Conn_02x06_Odd_Even J8
+U 1 1 5A2612F6
+P 9400 1000
+F 0 "J8" H 9450 1300 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9450 600 50  0000 C CNN
+F 2 "" H 9400 1000 50  0001 C CNN
+F 3 "" H 9400 1000 50  0001 C CNN
+	1    9400 1000
+	1    0    0    -1  
+$EndComp
+Text Label 9700 800  0    60   ~ 0
+VDDD
+Text Label 9700 900  0    60   ~ 0
+RST_N_IN
+Text Label 9700 1000 0    60   ~ 0
+EXTERN_TRIG_IN
+Text Label 9700 1100 0    60   ~ 0
+CLK_2X_IN
+Text Label 9700 1200 0    60   ~ 0
+VDDPST
+Text Label 9700 1300 0    60   ~ 0
+GND
+Text Label 9200 800  2    60   ~ 0
+GND
+Text Label 9200 900  2    60   ~ 0
+GND
+Text Label 9200 1000 2    60   ~ 0
+GND
+Text Label 9200 1100 2    60   ~ 0
+GND
+Text Label 9200 1200 2    60   ~ 0
+GND
+Text Label 9200 1300 2    60   ~ 0
+GND
+$Comp
+L Conn_02x06_Odd_Even J5
+U 1 1 5A2614DA
+P 7850 1000
+F 0 "J5" H 7900 1300 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 7900 600 50  0000 C CNN
+F 2 "" H 7850 1000 50  0001 C CNN
+F 3 "" H 7850 1000 50  0001 C CNN
+	1    7850 1000
+	1    0    0    -1  
+$EndComp
+Text Label 8150 800  0    60   ~ 0
+VDDD
+Text Label 8150 900  0    60   ~ 0
+RST_N_IN
+Text Label 8150 1000 0    60   ~ 0
+EXTERN_TRIG_IN
+Text Label 8150 1100 0    60   ~ 0
+CLK_2X_IN
+Text Label 8150 1200 0    60   ~ 0
+VDDPST
+Text Label 8150 1300 0    60   ~ 0
+GND
+Text Label 7650 800  2    60   ~ 0
+GND
+Text Label 7650 900  2    60   ~ 0
+GND
+Text Label 7650 1000 2    60   ~ 0
+GND
+Text Label 7650 1100 2    60   ~ 0
+GND
+Text Label 7650 1200 2    60   ~ 0
+GND
+Text Label 7650 1300 2    60   ~ 0
+GND
+Text Label 6600 800  0    60   ~ 0
+VDDD
+Text Label 6600 900  0    60   ~ 0
+RST_N_IN
+Text Label 6600 1000 0    60   ~ 0
+EXTERN_TRIG_IN
+Text Label 6600 1100 0    60   ~ 0
+CLK_2X_IN
+Text Label 6600 1200 0    60   ~ 0
+VDDPST
+Text Label 6600 1300 0    60   ~ 0
+GND
+$Comp
+L TXB0104D U2
+U 1 1 5A262509
+P 2000 6850
+F 0 "U2" H 1725 7505 50  0000 C CNN
+F 1 "TXB0104D" H 2350 7500 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2050 6000 50  0001 C CNN
+F 3 "" H 2110 6945 50  0001 C CNN
+	1    2000 6850
+	1    0    0    -1  
+$EndComp
+Text Label 2100 6150 1    60   ~ 0
+FPGA_VCCB
+Text Label 1900 6150 1    60   ~ 0
+BOARD_VDDPST
+Text Label 1600 6550 2    60   ~ 0
+NULL
+Text Label 1600 6750 2    60   ~ 0
+NULL
+Text Label 2400 6550 0    60   ~ 0
+NULL
+Text Label 2400 6750 0    60   ~ 0
+NULL
+Text Label 2400 6950 0    60   ~ 0
+NULL
+Text Label 1600 6950 2    60   ~ 0
+NULL
+Text Label 2400 7150 0    60   ~ 0
+NULL
+Text Label 1600 7150 2    60   ~ 0
+NULL
+$Comp
+L GND #PWR07
+U 1 1 5A262519
+P 2000 7550
+F 0 "#PWR07" H 2000 7300 50  0001 C CNN
+F 1 "GND" H 2000 7400 50  0000 C CNN
+F 2 "" H 2000 7550 50  0001 C CNN
+F 3 "" H 2000 7550 50  0001 C CNN
+	1    2000 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J1
+U 1 1 5A264CA7
+P 1000 3000
+F 0 "J1" H 1000 3300 50  0000 C CNN
+F 1 "Conn_01x06" H 1000 2600 50  0000 C CNN
+F 2 "" H 1000 3000 50  0001 C CNN
+F 3 "" H 1000 3000 50  0001 C CNN
+	1    1000 3000
+	-1   0    0    1   
+$EndComp
+Text Label 1200 3200 0    60   ~ 0
+GND
+NoConn ~ 1200 3100
+NoConn ~ 1200 3000
+NoConn ~ 1200 2700
+Text Label 1200 2900 0    60   ~ 0
+SERIAL_TX
+Text Label 2250 3950 0    60   ~ 0
+FPGA_RST_N_IN
+Text Label 1000 3950 2    60   ~ 0
+SERIAL_TX
+Text Label 1000 3850 2    60   ~ 0
+SERIAL_RX
+Text Label 1200 2800 0    60   ~ 0
+SERIAL_RX
+Text Label 6100 1850 2    60   ~ 0
+TRANS_MISO_A
+Text Label 6100 1750 2    60   ~ 0
+TRANS_MOSI_B
+$Comp
+L VCC #PWR08
+U 1 1 5A267748
+P 750 2000
+F 0 "#PWR08" H 750 1850 50  0001 C CNN
+F 1 "VCC" H 750 2150 50  0000 C CNN
+F 2 "" H 750 2000 50  0001 C CNN
+F 3 "" H 750 2000 50  0001 C CNN
+	1    750  2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  2000 750  2100
+Wire Wire Line
+	750  2100 850  2100
+Text Label 850  2100 0    60   ~ 0
+FPGA_VCCB
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 5A267883
+P 650 1150
+F 0 "#FLG09" H 650 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 650 1300 50  0000 C CNN
+F 2 "" H 650 1150 50  0001 C CNN
+F 3 "" H 650 1150 50  0001 C CNN
+	1    650  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR010
+U 1 1 5A26794F
+P 650 1150
+F 0 "#PWR010" H 650 1000 50  0001 C CNN
+F 1 "VCC" H 650 1300 50  0000 C CNN
+F 2 "" H 650 1150 50  0001 C CNN
+F 3 "" H 650 1150 50  0001 C CNN
+	1    650  1150
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5500 4750
+NoConn ~ 1600 6350
+NoConn ~ 6100 1000
+Text Notes 4700 4750 2    60   ~ 0
+OE pin here too
+NoConn ~ 6100 1650
+Text Notes 4800 3800 2    60   ~ 0
+Actual VCCA
+Text Notes 5400 3800 0    60   ~ 0
+Actual VCCB
+Text Notes 5250 3550 0    60   ~ 0
+2 GND Pins along side
+$EndSCHEMATC
