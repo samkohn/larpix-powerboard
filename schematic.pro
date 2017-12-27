@@ -1,4 +1,4 @@
-update=Sun 24 Dec 2017 05:58:01 PM PST
+update=Tue 26 Dec 2017 11:34:48 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -72,3 +70,5 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=library/larpix_power_components
+[general]
+version=1
