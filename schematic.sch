@@ -1062,8 +1062,6 @@ Wire Wire Line
 	1700 900  1700 1100
 Wire Wire Line
 	1700 1100 2150 1100
-Wire Wire Line
-	2150 1100 2150 700 
 Text Label 1800 900  3    60   ~ 0
 GND
 $Comp
@@ -1661,4 +1659,19 @@ Text Label 5600 4000 0    60   ~ 0
 GND
 Wire Wire Line
 	5500 4000 5600 4000
+$Comp
+L Fuse F1
+U 1 1 5A44A846
+P 2150 900
+F 0 "F1" V 2230 900 50  0000 C CNN
+F 1 "Fuse" V 2075 900 50  0000 C CNN
+F 2 "LArPix_Footprints:Fuse_Holder" V 2080 900 50  0001 C CNN
+F 3 "" H 2150 900 50  0001 C CNN
+	1    2150 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 750  2150 700 
+Wire Wire Line
+	2150 1100 2150 1050
 $EndSCHEMATC
