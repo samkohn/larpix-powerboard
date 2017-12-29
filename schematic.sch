@@ -189,50 +189,6 @@ F 3 "" H 700 1150 50  0001 C CNN
 	1    700  1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Battery_Cell BT2
-U 1 1 5A25119A
-P 1000 1350
-F 0 "BT2" H 1100 1450 50  0000 L CNN
-F 1 "1.5V" H 1100 1350 50  0000 L CNN
-F 2 "LArPix_Footprints:Battery_Holder_AA" V 1000 1410 50  0001 C CNN
-F 3 "" V 1000 1410 50  0001 C CNN
-	1    1000 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery_Cell BT3
-U 1 1 5A2512F3
-P 1000 1800
-F 0 "BT3" H 1100 1900 50  0000 L CNN
-F 1 "1.5V" H 1100 1800 50  0000 L CNN
-F 2 "LArPix_Footprints:Battery_Holder_AA" V 1000 1860 50  0001 C CNN
-F 3 "" V 1000 1860 50  0001 C CNN
-	1    1000 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 5A2513A4
-P 1000 1900
-F 0 "#PWR03" H 1000 1650 50  0001 C CNN
-F 1 "GND" H 1000 1750 50  0000 C CNN
-F 2 "" H 1000 1900 50  0001 C CNN
-F 3 "" H 1000 1900 50  0001 C CNN
-	1    1000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR04
-U 1 1 5A251E66
-P 1150 3850
-F 0 "#PWR04" H 1150 3600 50  0001 C CNN
-F 1 "GND" H 1150 3700 50  0000 C CNN
-F 2 "" H 1150 3850 50  0001 C CNN
-F 3 "" H 1150 3850 50  0001 C CNN
-	1    1150 3850
-	-1   0    0    1   
-$EndComp
 Text Label 6850 1650 2    60   ~ 0
 TRANS_MISO_B
 Text Label 6850 1950 2    60   ~ 0
@@ -452,10 +408,10 @@ TRANS_MISO_A
 Text Label 6850 1750 2    60   ~ 0
 TRANS_MOSI_B
 $Comp
-L VCC #PWR05
+L VCC #PWR03
 U 1 1 5A267748
 P 700 1550
-F 0 "#PWR05" H 700 1400 50  0001 C CNN
+F 0 "#PWR03" H 700 1400 50  0001 C CNN
 F 1 "VCC" H 700 1700 50  0000 C CNN
 F 2 "" H 700 1550 50  0001 C CNN
 F 3 "" H 700 1550 50  0001 C CNN
@@ -465,10 +421,10 @@ $EndComp
 Text Label 700  1650 3    60   ~ 0
 FPGA_VCCB_DIRTY
 $Comp
-L PWR_FLAG #FLG06
+L PWR_FLAG #FLG04
 U 1 1 5A267883
 P 700 700
-F 0 "#FLG06" H 700 775 50  0001 C CNN
+F 0 "#FLG04" H 700 775 50  0001 C CNN
 F 1 "PWR_FLAG" H 700 850 50  0000 C CNN
 F 2 "" H 700 700 50  0001 C CNN
 F 3 "" H 700 700 50  0001 C CNN
@@ -476,10 +432,10 @@ F 3 "" H 700 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR07
+L VCC #PWR05
 U 1 1 5A26794F
 P 700 700
-F 0 "#PWR07" H 700 550 50  0001 C CNN
+F 0 "#PWR05" H 700 550 50  0001 C CNN
 F 1 "VCC" H 700 850 50  0000 C CNN
 F 2 "" H 700 700 50  0001 C CNN
 F 3 "" H 700 700 50  0001 C CNN
@@ -488,17 +444,6 @@ F 3 "" H 700 700 50  0001 C CNN
 $EndComp
 NoConn ~ 6850 1000
 NoConn ~ 6850 1650
-$Comp
-L Battery_Cell BT1
-U 1 1 5A3B1007
-P 1000 900
-F 0 "BT1" H 1100 1000 50  0000 L CNN
-F 1 "1.5V" H 1100 900 50  0000 L CNN
-F 2 "LArPix_Footprints:Battery_Holder_AA" V 1000 960 50  0001 C CNN
-F 3 "" V 1000 960 50  0001 C CNN
-	1    1000 900 
-	1    0    0    -1  
-$EndComp
 Text Label 3200 650  0    60   ~ 0
 VCC_PST
 Text Label 3400 800  0    60   ~ 0
@@ -540,10 +485,10 @@ F 4 "501 7B" V 2050 6750 60  0001 C CNN "Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR08
+L GND #PWR06
 U 1 1 5A3C75D6
 P 1150 7200
-F 0 "#PWR08" H 1150 6950 50  0001 C CNN
+F 0 "#PWR06" H 1150 6950 50  0001 C CNN
 F 1 "GND" H 1150 7050 50  0000 C CNN
 F 2 "" H 1150 7200 50  0001 C CNN
 F 3 "" H 1150 7200 50  0001 C CNN
@@ -562,10 +507,10 @@ F 3 "" H 1600 6750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR07
 U 1 1 5A3C88C5
 P 2050 7000
-F 0 "#PWR09" H 2050 6750 50  0001 C CNN
+F 0 "#PWR07" H 2050 6750 50  0001 C CNN
 F 1 "GND" H 2050 6850 50  0000 C CNN
 F 2 "" H 2050 7000 50  0001 C CNN
 F 3 "" H 2050 7000 50  0001 C CNN
@@ -611,10 +556,10 @@ F 4 "501 7B" V 3700 6750 60  0001 C CNN "Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR010
+L GND #PWR08
 U 1 1 5A3C98E1
 P 2800 7200
-F 0 "#PWR010" H 2800 6950 50  0001 C CNN
+F 0 "#PWR08" H 2800 6950 50  0001 C CNN
 F 1 "GND" H 2800 7050 50  0000 C CNN
 F 2 "" H 2800 7200 50  0001 C CNN
 F 3 "" H 2800 7200 50  0001 C CNN
@@ -633,10 +578,10 @@ F 3 "" H 3250 6750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR011
+L GND #PWR09
 U 1 1 5A3C98EF
 P 3700 7000
-F 0 "#PWR011" H 3700 6750 50  0001 C CNN
+F 0 "#PWR09" H 3700 6750 50  0001 C CNN
 F 1 "GND" H 3700 6850 50  0000 C CNN
 F 2 "" H 3700 7000 50  0001 C CNN
 F 3 "" H 3700 7000 50  0001 C CNN
@@ -682,10 +627,10 @@ F 4 "501 7B" V 5400 6850 60  0001 C CNN "Part"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR010
 U 1 1 5A3C9BB8
 P 4500 7300
-F 0 "#PWR012" H 4500 7050 50  0001 C CNN
+F 0 "#PWR010" H 4500 7050 50  0001 C CNN
 F 1 "GND" H 4500 7150 50  0000 C CNN
 F 2 "" H 4500 7300 50  0001 C CNN
 F 3 "" H 4500 7300 50  0001 C CNN
@@ -704,10 +649,10 @@ F 3 "" H 4950 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR011
 U 1 1 5A3C9BC6
 P 5400 7100
-F 0 "#PWR013" H 5400 6850 50  0001 C CNN
+F 0 "#PWR011" H 5400 6850 50  0001 C CNN
 F 1 "GND" H 5400 6950 50  0000 C CNN
 F 2 "" H 5400 7100 50  0001 C CNN
 F 3 "" H 5400 7100 50  0001 C CNN
@@ -730,27 +675,27 @@ Text Notes 2050 7650 2    60   ~ 0
 $Comp
 L CMOD_A7_FPGA U1
 U 1 1 5A4055EF
-P 1950 6100
-F 0 "U1" H 1900 5600 60  0000 C TNN
-F 1 "CMOD_A7_FPGA" H 1950 6300 60  0000 C CNN
-F 2 "LArPix_Footprints:LArPix-FPGA" H 1900 5600 60  0001 C CNN
-F 3 "" H 1900 5600 60  0001 C CNN
-	1    1950 6100
+P 3150 6250
+F 0 "U1" H 3100 5750 60  0000 C TNN
+F 1 "CMOD_A7_FPGA" H 3150 6450 60  0000 C CNN
+F 2 "LArPix_Footprints:LArPix-FPGA" H 3100 5750 60  0001 C CNN
+F 3 "" H 3100 5750 60  0001 C CNN
+	1    3150 6250
 	-1   0    0    1   
 $EndComp
-Text Label 2600 3900 0    60   ~ 0
+Text Label 3800 4050 0    60   ~ 0
 FPGA_VCCB_DIRTY
-Text Label 2600 5900 0    60   ~ 0
+Text Label 3800 6050 0    60   ~ 0
 FPGA_RST_N_IN
-Text Label 2600 6000 0    60   ~ 0
+Text Label 3800 6150 0    60   ~ 0
 FPGA_MISO_A
-Text Label 2600 6100 0    60   ~ 0
+Text Label 3800 6250 0    60   ~ 0
 FPGA_MOSI_A
-Text Label 2600 6200 0    60   ~ 0
+Text Label 3800 6350 0    60   ~ 0
 FPGA_CLK_2X_IN
-Text Label 1350 4000 2    60   ~ 0
+Text Label 2550 4150 2    60   ~ 0
 MASTER_SERIAL_RX
-Text Label 1350 4100 2    60   ~ 0
+Text Label 2550 4250 2    60   ~ 0
 MASTER_SERIAL_TX
 $Comp
 L Conn_02x01 J12
@@ -766,209 +711,209 @@ $EndComp
 $Comp
 L Conn_01x03 J13
 U 1 1 5A43A8E5
-P 2250 1350
-F 0 "J13" H 2250 1550 50  0000 C CNN
-F 1 "Conn_01x03" H 2250 1150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2250 1350 50  0001 C CNN
-F 3 "" H 2250 1350 50  0001 C CNN
-	1    2250 1350
+P 2500 1350
+F 0 "J13" H 2500 1550 50  0000 C CNN
+F 1 "Conn_01x03" H 2500 1150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2500 1350 50  0001 C CNN
+F 3 "" H 2500 1350 50  0001 C CNN
+	1    2500 1350
 	1    0    0    -1  
 $EndComp
-Text Label 2050 1350 2    60   ~ 0
+Text Label 2300 1350 2    60   ~ 0
 FPGA_RST_N_IN
-Text Label 2050 1250 2    60   ~ 0
+Text Label 2300 1250 2    60   ~ 0
 POT_RST_N_IN
-Text Label 2050 1450 2    60   ~ 0
+Text Label 2300 1450 2    60   ~ 0
 LT_A_RST_N_IN
 $Comp
 L Conn_01x03 J15
 U 1 1 5A43B512
-P 3350 1350
-F 0 "J15" H 3350 1550 50  0000 C CNN
-F 1 "Conn_01x03" H 3350 1150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3350 1350 50  0001 C CNN
-F 3 "" H 3350 1350 50  0001 C CNN
-	1    3350 1350
+P 3600 1350
+F 0 "J15" H 3600 1550 50  0000 C CNN
+F 1 "Conn_01x03" H 3600 1150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3600 1350 50  0001 C CNN
+F 3 "" H 3600 1350 50  0001 C CNN
+	1    3600 1350
 	1    0    0    -1  
 $EndComp
-Text Label 3150 1250 2    60   ~ 0
+Text Label 3400 1250 2    60   ~ 0
 POT_MISO_A
-Text Label 3150 1350 2    60   ~ 0
+Text Label 3400 1350 2    60   ~ 0
 FPGA_MISO_A
-Text Label 3150 1450 2    60   ~ 0
+Text Label 3400 1450 2    60   ~ 0
 LT_A_MISO_A
 $Comp
 L Conn_01x03 J14
 U 1 1 5A44405D
-P 2250 1850
-F 0 "J14" H 2250 2050 50  0000 C CNN
-F 1 "Conn_01x03" H 2250 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2250 1850 50  0001 C CNN
-F 3 "" H 2250 1850 50  0001 C CNN
-	1    2250 1850
+P 2500 1850
+F 0 "J14" H 2500 2050 50  0000 C CNN
+F 1 "Conn_01x03" H 2500 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2500 1850 50  0001 C CNN
+F 3 "" H 2500 1850 50  0001 C CNN
+	1    2500 1850
 	1    0    0    -1  
 $EndComp
-Text Label 2050 1750 2    60   ~ 0
+Text Label 2300 1750 2    60   ~ 0
 POT_OUT_RST_N_IN
-Text Label 2050 1850 2    60   ~ 0
+Text Label 2300 1850 2    60   ~ 0
 TRANS_RST_N_IN
-Text Label 2050 1950 2    60   ~ 0
+Text Label 2300 1950 2    60   ~ 0
 LT_B_RST_N_IN
 $Comp
 L Conn_01x03 J16
 U 1 1 5A4442C4
-P 3350 1850
-F 0 "J16" H 3350 2050 50  0000 C CNN
-F 1 "Conn_01x03" H 3350 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3350 1850 50  0001 C CNN
-F 3 "" H 3350 1850 50  0001 C CNN
-	1    3350 1850
+P 3600 1850
+F 0 "J16" H 3600 2050 50  0000 C CNN
+F 1 "Conn_01x03" H 3600 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 3600 1850 50  0001 C CNN
+F 3 "" H 3600 1850 50  0001 C CNN
+	1    3600 1850
 	1    0    0    -1  
 $EndComp
-Text Label 3150 1750 2    60   ~ 0
+Text Label 3400 1750 2    60   ~ 0
 POT_OUT_MISO_A
-Text Label 3150 1850 2    60   ~ 0
+Text Label 3400 1850 2    60   ~ 0
 TRANS_MISO_A
-Text Label 3150 1950 2    60   ~ 0
+Text Label 3400 1950 2    60   ~ 0
 LT_B_MISO_A
 $Comp
 L SN74AVC4T774 U2
 U 1 1 5A44606B
-P 3550 3100
-F 0 "U2" H 3550 4000 60  0000 C CNN
-F 1 "SN74AVC4T774" H 3550 3100 60  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 3550 3100 60  0001 C CNN
-F 3 "" H 3550 3100 60  0001 C CNN
-	1    3550 3100
+P 5500 6000
+F 0 "U2" H 5500 6900 60  0000 C CNN
+F 1 "SN74AVC4T774" H 5500 6000 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 5500 6000 60  0001 C CNN
+F 3 "" H 5500 6000 60  0001 C CNN
+	1    5500 6000
 	1    0    0    -1  
 $EndComp
-Text Label 4100 2400 0    60   ~ 0
+Text Label 6050 5300 0    60   ~ 0
 BOARD_VDDPST
-Text Label 4100 2300 0    60   ~ 0
+Text Label 6050 5200 0    60   ~ 0
 FPGA_VCCB
-Text Label 3000 2300 2    60   ~ 0
+Text Label 4950 5200 2    60   ~ 0
 FPGA_VCCB
-Text Label 3000 2500 2    60   ~ 0
+Text Label 4950 5400 2    60   ~ 0
 LT_A_RST_N_IN
-Text Label 4100 2500 0    60   ~ 0
+Text Label 6050 5400 0    60   ~ 0
 LT_B_RST_N_IN
-Text Label 3000 2600 2    60   ~ 0
+Text Label 4950 5500 2    60   ~ 0
 LT_A_MISO_A
-Text Label 4100 2600 0    60   ~ 0
+Text Label 6050 5500 0    60   ~ 0
 LT_B_MISO_A
 $Comp
 L Conn_01x03 J17
 U 1 1 5A455A93
-P 4550 1350
-F 0 "J17" H 4550 1550 50  0000 C CNN
-F 1 "Conn_01x03" H 4550 1150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4550 1350 50  0001 C CNN
-F 3 "" H 4550 1350 50  0001 C CNN
-	1    4550 1350
+P 4800 1350
+F 0 "J17" H 4800 1550 50  0000 C CNN
+F 1 "Conn_01x03" H 4800 1150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4800 1350 50  0001 C CNN
+F 3 "" H 4800 1350 50  0001 C CNN
+	1    4800 1350
 	1    0    0    -1  
 $EndComp
-Text Label 4350 1250 2    60   ~ 0
+Text Label 4600 1250 2    60   ~ 0
 POT_MOSI_A
-Text Label 4350 1350 2    60   ~ 0
+Text Label 4600 1350 2    60   ~ 0
 FPGA_MOSI_A
-Text Label 4350 1450 2    60   ~ 0
+Text Label 4600 1450 2    60   ~ 0
 LT_A_MOSI_A
 $Comp
 L Conn_01x03 J18
 U 1 1 5A455F3C
-P 4550 1850
-F 0 "J18" H 4550 2050 50  0000 C CNN
-F 1 "Conn_01x03" H 4550 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4550 1850 50  0001 C CNN
-F 3 "" H 4550 1850 50  0001 C CNN
-	1    4550 1850
+P 4800 1850
+F 0 "J18" H 4800 2050 50  0000 C CNN
+F 1 "Conn_01x03" H 4800 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4800 1850 50  0001 C CNN
+F 3 "" H 4800 1850 50  0001 C CNN
+	1    4800 1850
 	1    0    0    -1  
 $EndComp
-Text Label 4350 1750 2    60   ~ 0
+Text Label 4600 1750 2    60   ~ 0
 POT_OUT_MOSI_A
-Text Label 4350 1850 2    60   ~ 0
+Text Label 4600 1850 2    60   ~ 0
 TRANS_MOSI_A
-Text Label 4350 1950 2    60   ~ 0
+Text Label 4600 1950 2    60   ~ 0
 LT_B_MOSI_A
 $Comp
 L Conn_01x03 J19
 U 1 1 5A4561AD
-P 5700 1350
-F 0 "J19" H 5700 1550 50  0000 C CNN
-F 1 "Conn_01x03" H 5700 1150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5700 1350 50  0001 C CNN
-F 3 "" H 5700 1350 50  0001 C CNN
-	1    5700 1350
+P 5950 1350
+F 0 "J19" H 5950 1550 50  0000 C CNN
+F 1 "Conn_01x03" H 5950 1150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5950 1350 50  0001 C CNN
+F 3 "" H 5950 1350 50  0001 C CNN
+	1    5950 1350
 	1    0    0    -1  
 $EndComp
-Text Label 5500 1250 2    60   ~ 0
+Text Label 5750 1250 2    60   ~ 0
 POT_CLK_2X_IN
-Text Label 5500 1350 2    60   ~ 0
+Text Label 5750 1350 2    60   ~ 0
 FPGA_CLK_2X_IN
-Text Label 5500 1450 2    60   ~ 0
+Text Label 5750 1450 2    60   ~ 0
 LT_A_CLK_2X_IN
 $Comp
 L Conn_01x03 J20
 U 1 1 5A456433
-P 5700 1850
-F 0 "J20" H 5700 2050 50  0000 C CNN
-F 1 "Conn_01x03" H 5700 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5700 1850 50  0001 C CNN
-F 3 "" H 5700 1850 50  0001 C CNN
-	1    5700 1850
+P 5950 1850
+F 0 "J20" H 5950 2050 50  0000 C CNN
+F 1 "Conn_01x03" H 5950 1650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5950 1850 50  0001 C CNN
+F 3 "" H 5950 1850 50  0001 C CNN
+	1    5950 1850
 	1    0    0    -1  
 $EndComp
-Text Label 5500 1750 2    60   ~ 0
+Text Label 5750 1750 2    60   ~ 0
 POT_OUT_CLK_2X_IN
-Text Label 5500 1850 2    60   ~ 0
+Text Label 5750 1850 2    60   ~ 0
 TRANS_CLK_2X_IN
-Text Label 5500 1950 2    60   ~ 0
+Text Label 5750 1950 2    60   ~ 0
 LT_B_CLK_2X_IN
-Text Label 3000 2700 2    60   ~ 0
+Text Label 4950 5600 2    60   ~ 0
 LT_A_MOSI_A
-Text Label 3000 2800 2    60   ~ 0
+Text Label 4950 5700 2    60   ~ 0
 LT_A_CLK_2X_IN
-Text Label 3000 2900 2    60   ~ 0
+Text Label 4950 5800 2    60   ~ 0
 FPGA_VCCB
-Text Label 3000 3000 2    60   ~ 0
+Text Label 4950 5900 2    60   ~ 0
 FPGA_VCCB
-Text Label 4100 2700 0    60   ~ 0
+Text Label 6050 5600 0    60   ~ 0
 LT_B_MOSI_A
-Text Label 4100 2800 0    60   ~ 0
+Text Label 6050 5700 0    60   ~ 0
 LT_B_CLK_2X_IN
 $Comp
 L R R10
 U 1 1 5A4368BD
-P 2350 3250
-F 0 "R10" V 2430 3250 50  0000 C CNN
-F 1 "R" V 2350 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2280 3250 50  0001 C CNN
-F 3 "" H 2350 3250 50  0001 C CNN
-	1    2350 3250
+P 5550 6350
+F 0 "R10" V 5630 6350 50  0000 C CNN
+F 1 "R" V 5550 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5480 6350 50  0001 C CNN
+F 3 "" H 5550 6350 50  0001 C CNN
+	1    5550 6350
 	0    1    1    0   
 $EndComp
-Text Label 2200 3250 2    60   ~ 0
+Text Label 5400 6350 2    60   ~ 0
 FPGA_VCCB_DIRTY
 $Comp
 L C C2
 U 1 1 5A436C1F
-P 2650 3400
-F 0 "C2" H 2675 3500 50  0000 L CNN
-F 1 "C" H 2675 3300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2688 3250 50  0001 C CNN
-F 3 "" H 2650 3400 50  0001 C CNN
-	1    2650 3400
+P 5850 6500
+F 0 "C2" H 5875 6600 50  0000 L CNN
+F 1 "C" H 5875 6400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5888 6350 50  0001 C CNN
+F 3 "" H 5850 6500 50  0001 C CNN
+	1    5850 6500
 	1    0    0    -1  
 $EndComp
-Text Label 3000 2400 2    60   ~ 0
+Text Label 4950 5300 2    60   ~ 0
 GND
-Text Label 4100 2900 0    60   ~ 0
+Text Label 6050 5800 0    60   ~ 0
 GND
-Text Label 4100 3000 0    60   ~ 0
+Text Label 6050 5900 0    60   ~ 0
 GND
-Text Label 2650 3550 3    60   ~ 0
+Text Label 5850 6650 3    60   ~ 0
 GND
-Text Label 2850 3250 0    60   ~ 0
+Text Label 6050 6350 0    60   ~ 0
 FPGA_VCCB
 $Comp
 L Conn_01x03 J2
@@ -982,13 +927,7 @@ F 3 "" H 1700 700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1000 1450 1000 1600
-Wire Wire Line
 	700  1550 700  1650
-Wire Wire Line
-	1150 3900 1150 3850
-Wire Wire Line
-	1000 1000 1000 1150
 Wire Wire Line
 	2750 700  3050 700 
 Wire Wire Line
@@ -1046,18 +985,10 @@ Wire Wire Line
 	5200 6850 5200 6750
 Connection ~ 5200 6850
 Wire Wire Line
-	1150 3900 1350 3900
-Wire Wire Line
 	2150 700  2250 700 
 Wire Wire Line
-	2500 3250 2850 3250
-Connection ~ 2650 3250
-Wire Wire Line
-	1000 700  1400 700 
-Wire Wire Line
-	1400 700  1400 900 
-Wire Wire Line
-	1400 900  1600 900 
+	5700 6350 6050 6350
+Connection ~ 5850 6350
 Wire Wire Line
 	1700 900  1700 1100
 Wire Wire Line
@@ -1674,4 +1605,110 @@ Wire Wire Line
 	2150 750  2150 700 
 Wire Wire Line
 	2150 1100 2150 1050
+Text Label 2550 4050 2    60   ~ 0
+GND
+$Comp
+L Conn_02x20_Odd_Even J21
+U 1 1 5A458855
+P 1050 5300
+F 0 "J21" H 1100 6300 50  0000 C CNN
+F 1 "Raspberry_Pi_Zero" H 1100 4200 50  0000 C CNN
+F 2 "LArPix_Footprints:Raspberry_Pi_Zero" H 1050 5300 50  0001 C CNN
+F 3 "" H 1050 5300 50  0001 C CNN
+	1    1050 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 850  4400
+NoConn ~ 850  4500
+NoConn ~ 850  4600
+NoConn ~ 850  4700
+NoConn ~ 850  4800
+NoConn ~ 850  4900
+NoConn ~ 850  5000
+NoConn ~ 850  5100
+NoConn ~ 850  5200
+NoConn ~ 850  5300
+NoConn ~ 850  5400
+NoConn ~ 850  5500
+NoConn ~ 850  5600
+NoConn ~ 850  5700
+NoConn ~ 850  5800
+NoConn ~ 850  5900
+NoConn ~ 850  6000
+NoConn ~ 850  6100
+NoConn ~ 850  6200
+NoConn ~ 850  6300
+NoConn ~ 1350 6300
+NoConn ~ 1350 6200
+NoConn ~ 1350 6100
+NoConn ~ 1350 6000
+NoConn ~ 1350 5900
+NoConn ~ 1350 5800
+NoConn ~ 1350 5700
+NoConn ~ 1350 5600
+NoConn ~ 1350 5500
+NoConn ~ 1350 5400
+NoConn ~ 1350 5300
+NoConn ~ 1350 5200
+NoConn ~ 1350 5100
+NoConn ~ 1350 5000
+NoConn ~ 1350 4900
+NoConn ~ 1350 4500
+NoConn ~ 1350 4400
+Text Label 1350 4600 0    60   ~ 0
+MASTER_SERIAL_TX
+Text Label 1350 4700 0    60   ~ 0
+MASTER_SERIAL_RX
+Text Label 1350 4800 0    60   ~ 0
+GND
+$Comp
+L Conn_01x08_Female J22
+U 1 1 5A45CE18
+P 1400 1450
+F 0 "J22" H 1400 1850 50  0000 C CNN
+F 1 "USB_Supply" H 1400 950 50  0000 C CNN
+F 2 "LArPix_Footprints:PowerBoost_1000C" H 1400 1450 50  0001 C CNN
+F 3 "" H 1400 1450 50  0001 C CNN
+	1    1400 1450
+	1    0    0    -1  
+$EndComp
+Text Label 1200 1550 2    60   ~ 0
+GND
+Text Label 1200 1750 2    60   ~ 0
+GND
+Text Label 1200 1450 2    60   ~ 0
+USB_EN
+Text Label 1200 1850 2    60   ~ 0
+BATT_5V
+Text Label 1200 1350 2    60   ~ 0
+USB_VS
+Text Label 1200 1250 2    60   ~ 0
+BATT_RAW
+Text Label 1200 1150 2    60   ~ 0
+USB_RAW
+NoConn ~ 1200 1650
+Text Label 1600 900  3    60   ~ 0
+BATT_RAW
+NoConn ~ 1200 1150
+Wire Wire Line
+	3800 3750 3800 4050
+Text Label 3800 3750 0    60   ~ 0
+BATT_5V
+$Comp
+L Conn_01x03 J23
+U 1 1 5A46708F
+P 1700 2250
+F 0 "J23" H 1700 2450 50  0000 C CNN
+F 1 "Conn_01x03" H 1700 2050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1700 2250 50  0001 C CNN
+F 3 "" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	1    0    0    -1  
+$EndComp
+Text Label 1500 2150 2    60   ~ 0
+USB_VS
+Text Label 1500 2250 2    60   ~ 0
+USB_EN
+Text Label 1500 2350 2    60   ~ 0
+GND
 $EndSCHEMATC
