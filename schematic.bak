@@ -667,9 +667,6 @@ Text Label 1950 7550 0    60   ~ 0
 POT_OUT_MISO_A
 Text Label 1550 7550 2    60   ~ 0
 POT_MISO_A
-NoConn ~ 2050 6600
-NoConn ~ 5400 6700
-NoConn ~ 3700 6600
 Text Notes 2050 7650 2    60   ~ 0
 "level shifter"
 $Comp
@@ -787,7 +784,7 @@ F 3 "" H 5500 6000 60  0001 C CNN
 	1    5500 6000
 	1    0    0    -1  
 $EndComp
-Text Label 6050 5300 0    60   ~ 0
+Text Label 5900 6950 0    60   ~ 0
 BOARD_VDDPST
 Text Label 6050 5200 0    60   ~ 0
 FPGA_VCCB
@@ -1064,7 +1061,6 @@ F 4 "204 7B" V 9200 6100 60  0001 C CNN "Part"
 	1    9200 6100
 	1    0    0    1   
 $EndComp
-NoConn ~ 9200 6250
 $Comp
 L R R12
 U 1 1 5A451F13
@@ -1077,7 +1073,7 @@ F 3 "" H 10600 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9950 5200 9950 5450
+	9950 5000 9950 5450
 Connection ~ 9950 5350
 Connection ~ 10450 5950
 Connection ~ 10750 5950
@@ -1094,7 +1090,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 5500 10450 6250
 Wire Wire Line
-	9650 5200 9650 5450
+	9650 5000 9650 5450
 Wire Wire Line
 	9650 5300 9450 5300
 Connection ~ 9650 5300
@@ -1183,7 +1179,6 @@ F 4 "204 7B" V 7000 6100 60  0001 C CNN "Part"
 	1    7000 6100
 	1    0    0    1   
 $EndComp
-NoConn ~ 7000 6250
 $Comp
 L R R3
 U 1 1 5A456B39
@@ -1196,13 +1191,13 @@ F 3 "" H 8400 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7750 5200 7750 5450
+	7750 5000 7750 5450
 Connection ~ 7750 5350
 Connection ~ 8250 5950
 Connection ~ 8550 5950
 Connection ~ 8250 5700
 Wire Wire Line
-	7250 6100 7150 6100
+	7150 6100 7250 6100
 Wire Wire Line
 	8250 5900 8100 5900
 Connection ~ 8250 5900
@@ -1213,7 +1208,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 5500 8250 6250
 Wire Wire Line
-	7450 5200 7450 5450
+	7450 5000 7450 5450
 Wire Wire Line
 	7450 5300 7250 5300
 Connection ~ 7450 5300
@@ -1302,7 +1297,6 @@ F 4 "204 7B" V 9200 4750 60  0001 C CNN "Part"
 	1    9200 4750
 	1    0    0    1   
 $EndComp
-NoConn ~ 9200 4900
 $Comp
 L R R11
 U 1 1 5A457999
@@ -1315,7 +1309,7 @@ F 3 "" H 10600 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9950 3850 9950 4100
+	9950 3600 9950 4100
 Connection ~ 9950 4000
 Connection ~ 10450 4600
 Connection ~ 10750 4600
@@ -1332,7 +1326,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 4150 10450 4900
 Wire Wire Line
-	9650 3850 9650 4100
+	9650 3600 9650 4100
 Wire Wire Line
 	9650 3950 9450 3950
 Connection ~ 9650 3950
@@ -1421,7 +1415,6 @@ F 4 "204 7B" V 7000 4750 60  0001 C CNN "Part"
 	1    7000 4750
 	1    0    0    1   
 $EndComp
-NoConn ~ 7000 4900
 $Comp
 L R R2
 U 1 1 5A457F8D
@@ -1434,7 +1427,7 @@ F 3 "" H 8400 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7750 3850 7750 4100
+	7750 3600 7750 4100
 Connection ~ 7750 4000
 Connection ~ 8250 4600
 Connection ~ 8550 4600
@@ -1451,7 +1444,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 4150 8250 4900
 Wire Wire Line
-	7450 3850 7450 4100
+	7450 3600 7450 4100
 Wire Wire Line
 	7450 3950 7250 3950
 Connection ~ 7450 3950
@@ -1540,7 +1533,6 @@ F 4 "204 7B" V 4750 4750 60  0001 C CNN "Part"
 	1    4750 4750
 	1    0    0    1   
 $EndComp
-NoConn ~ 4750 4900
 $Comp
 L R R1
 U 1 1 5A458F5D
@@ -1553,7 +1545,7 @@ F 3 "" H 6150 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5500 3850 5500 4100
+	5500 3600 5500 4100
 Connection ~ 5500 4000
 Connection ~ 6000 4600
 Connection ~ 6300 4600
@@ -1570,7 +1562,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 4150 6000 4900
 Wire Wire Line
-	5200 3850 5200 4100
+	5200 3600 5200 4100
 Wire Wire Line
 	5200 3950 5000 3950
 Connection ~ 5200 3950
@@ -1654,7 +1646,6 @@ NoConn ~ 1350 5100
 NoConn ~ 1350 5000
 NoConn ~ 1350 4900
 NoConn ~ 1350 4500
-NoConn ~ 1350 4400
 Text Label 1350 4600 0    60   ~ 0
 MASTER_SERIAL_TX
 Text Label 1350 4700 0    60   ~ 0
@@ -1691,8 +1682,8 @@ Text Label 1600 900  3    60   ~ 0
 BATT_RAW
 NoConn ~ 1200 1150
 Wire Wire Line
-	3800 3750 3800 4050
-Text Label 3800 3750 0    60   ~ 0
+	3800 3450 3800 4050
+Text Label 3800 3450 0    60   ~ 0
 BATT_5V
 $Comp
 L Conn_01x03 J23
@@ -1711,4 +1702,205 @@ Text Label 1500 2250 2    60   ~ 0
 USB_EN
 Text Label 1500 2350 2    60   ~ 0
 GND
+$Comp
+L C C?
+U 1 1 5A4C3E65
+P 3950 3650
+F 0 "C?" H 3975 3750 50  0000 L CNN
+F 1 "C" H 3975 3550 50  0000 L CNN
+F 2 "" H 3988 3500 50  0001 C CNN
+F 3 "" H 3950 3650 50  0001 C CNN
+	1    3950 3650
+	0    1    1    0   
+$EndComp
+Connection ~ 3800 3650
+$Comp
+L C C?
+U 1 1 5A4C40A4
+P 3950 3850
+F 0 "C?" H 3975 3950 50  0000 L CNN
+F 1 "C" H 3975 3750 50  0000 L CNN
+F 2 "" H 3988 3700 50  0001 C CNN
+F 3 "" H 3950 3850 50  0001 C CNN
+	1    3950 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 3800 3850
+Text Label 4100 3650 0    60   ~ 0
+GND
+Text Label 4100 3850 0    60   ~ 0
+GND
+$Comp
+L C C?
+U 1 1 5A4C61C1
+P 1200 4050
+F 0 "C?" H 1225 4150 50  0000 L CNN
+F 1 "C" H 1225 3950 50  0000 L CNN
+F 2 "" H 1238 3900 50  0001 C CNN
+F 3 "" H 1200 4050 50  0001 C CNN
+	1    1200 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A4C62DA
+P 1200 3800
+F 0 "C?" H 1225 3900 50  0000 L CNN
+F 1 "C" H 1225 3700 50  0000 L CNN
+F 2 "" H 1238 3650 50  0001 C CNN
+F 3 "" H 1200 3800 50  0001 C CNN
+	1    1200 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 3650 1350 4400
+Connection ~ 1350 3800
+Connection ~ 1350 4050
+Text Label 1350 3650 0    60   ~ 0
+BATT_5V
+Text Label 1050 3800 2    60   ~ 0
+GND
+Text Label 1050 4050 2    60   ~ 0
+GND
+$Comp
+L C C?
+U 1 1 5A4C71C2
+P 5350 3600
+F 0 "C?" H 5375 3700 50  0000 L CNN
+F 1 "C" H 5375 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5388 3450 50  0001 C CNN
+F 3 "" H 5350 3600 50  0001 C CNN
+	1    5350 3600
+	0    -1   1    0   
+$EndComp
+Connection ~ 5200 3850
+Connection ~ 5500 3850
+$Comp
+L C C?
+U 1 1 5A4C7799
+P 7600 3600
+F 0 "C?" H 7625 3700 50  0000 L CNN
+F 1 "C" H 7625 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7638 3450 50  0001 C CNN
+F 3 "" H 7600 3600 50  0001 C CNN
+	1    7600 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A4C7FF0
+P 9800 3600
+F 0 "C?" H 9825 3700 50  0000 L CNN
+F 1 "C" H 9825 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9838 3450 50  0001 C CNN
+F 3 "" H 9800 3600 50  0001 C CNN
+	1    9800 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A4C8144
+P 7600 5000
+F 0 "C?" H 7625 5100 50  0000 L CNN
+F 1 "C" H 7625 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7638 4850 50  0001 C CNN
+F 3 "" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A4C892B
+P 9800 5000
+F 0 "C?" H 9825 5100 50  0000 L CNN
+F 1 "C" H 9825 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9838 4850 50  0001 C CNN
+F 3 "" H 9800 5000 50  0001 C CNN
+	1    9800 5000
+	0    -1   1    0   
+$EndComp
+Connection ~ 7450 5200
+Connection ~ 7750 5200
+Connection ~ 9650 5200
+Connection ~ 9950 5200
+Connection ~ 9650 3850
+Connection ~ 9950 3850
+Connection ~ 7450 3850
+Connection ~ 7750 3850
+$Comp
+L C C?
+U 1 1 5A4CB1E7
+P 6050 7100
+F 0 "C?" H 6075 7200 50  0000 L CNN
+F 1 "C" H 6075 7000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 6950 50  0001 C CNN
+F 3 "" H 6050 7100 50  0001 C CNN
+	1    6050 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A4CB31C
+P 6050 7300
+F 0 "C?" H 6075 7400 50  0000 L CNN
+F 1 "C" H 6075 7200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6088 7150 50  0001 C CNN
+F 3 "" H 6050 7300 50  0001 C CNN
+	1    6050 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 6950 5900 7500
+Connection ~ 5900 7100
+Connection ~ 5900 7300
+Text Label 5900 7500 0    60   ~ 0
+LT_VDDPST
+Text Label 6050 5300 0    60   ~ 0
+LT_VDDPST
+Wire Wire Line
+	7000 6250 7200 6250
+Wire Wire Line
+	7200 6250 7200 6100
+Connection ~ 7200 6100
+Wire Wire Line
+	9200 6250 9400 6250
+Wire Wire Line
+	9400 6250 9400 6100
+Connection ~ 9400 6100
+Wire Wire Line
+	9200 4900 9400 4900
+Wire Wire Line
+	9400 4900 9400 4750
+Connection ~ 9400 4750
+Wire Wire Line
+	7000 4900 7200 4900
+Wire Wire Line
+	7200 4900 7200 4750
+Connection ~ 7200 4750
+Wire Wire Line
+	4750 4900 4950 4900
+Wire Wire Line
+	4950 4900 4950 4750
+Connection ~ 4950 4750
+Wire Wire Line
+	2050 6600 1900 6600
+Wire Wire Line
+	1900 6600 1900 6700
+Wire Wire Line
+	1900 6700 1850 6700
+Connection ~ 1850 6700
+Wire Wire Line
+	3700 6600 3550 6600
+Wire Wire Line
+	3550 6600 3550 6700
+Wire Wire Line
+	3550 6700 3500 6700
+Connection ~ 3500 6700
+Wire Wire Line
+	5400 6700 5250 6700
+Wire Wire Line
+	5250 6700 5250 6800
+Wire Wire Line
+	5250 6800 5200 6800
+Connection ~ 5200 6800
 $EndSCHEMATC
