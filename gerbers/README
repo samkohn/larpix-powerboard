@@ -1,0 +1,23 @@
+README for LArPix Control Board v1
+==================================
+
+Contact Info:
+Samuel Kohn - LBNL
+skohn@lbl.gov
+
+2-Layer board
+Thickness: 0.062"
+
+Files:
+schematic-B.Cu.gbl
+schematic-B.Fab.gbr
+schematic-B.Mask.gbs
+schematic-B.Paste.gbp
+schematic-B.SilkS.gbo
+schematic.drl
+schematic-Edge.Cuts.gm1
+schematic-F.Cu.gtl
+schematic-F.Fab.gbr
+schematic-F.Mask.gts
+schematic-F.Paste.gtp
+schematic-F.SilkS.gto
