@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/home/skohn/Documents/research/LArPix/circuit board/schematic.sch")
-    (date "Tue 02 Jan 2018 02:32:43 PM PST")
+    (date "Tue 02 Jan 2018 09:41:41 PM PST")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -876,10 +876,10 @@
         (pin (num 15) (name VCCB) (type input))
         (pin (num 16) (name VCCA) (type input)))))
   (libraries
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
     (library (logical larpix_power_components)
       (uri "/home/skohn/Documents/research/LArPix/circuit board/library/larpix_power_components.lib")))
   (nets
